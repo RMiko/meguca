@@ -190,7 +190,7 @@ func CaptchaService(board string) *captchouli.Service {
 // This function blocks until all services are initialized.
 func LoadCaptchaServices() (err error) {
 	conf := config.Get()
-	if !conf.Captcha || config.Server.ImagerMode == config.NoImager {
+	if  config.Server.ImagerMode == config.NoImager {
 		return
 	}
 

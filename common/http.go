@@ -11,8 +11,8 @@ import (
 
 // Extract host for setting cookies from request
 func ExtractCookieHost(r *http.Request) string {
-	host := r.URL.Hostname()
-
+	host := r.Host
+	fmt.Println(host)
 	// IP, not a domain name
 	if net.ParseIP(host) != nil {
 		return host

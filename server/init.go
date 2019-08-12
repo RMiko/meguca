@@ -5,7 +5,6 @@ package server
 import (
 	"os"
 	"strconv"
-
 	ass "github.com/bakape/meguca/assets"
 	"github.com/bakape/meguca/auth"
 	"github.com/bakape/meguca/config"
